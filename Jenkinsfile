@@ -38,7 +38,7 @@ pipeline {
                 } 
             }
         }
-        stage('Deploy image') {
+        stage('Deploy alex') {
             steps{
                 script{ 
                     docker.withRegistry("https://"+registry,"ecr:us-east-1:"+registryCredential) {
